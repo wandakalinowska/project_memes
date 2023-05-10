@@ -1,11 +1,25 @@
-import './style/App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Nav from './components/Nav';
-import Hot from './components/Hot';
-import Regular from './components/Regular';
+import React, { useState } from "react";
+import INITIAL_ARRAY from "./components/INITIAL_ARRAY";
+import Nav from "./components/Nav";
+import Regular from "./components/Regular";
+import Hot from "./components/Hot";
 
+export default function App() {
+  const [state, setState] = useState(INITIAL_ARRAY);
 
-function App() {
+  const handleUpvotes = (id) => {
+    const newState = [...state];
+    newState[id].upvotes += 1;
+    setState(newState);
+  };
+
+  const handleDownvotes = (id) => {
+    const newState = [...state];
+    newState[id].downvotes += 1;
+    setState(newState);
+  };
+  // state.filter((sum) => console.log(sum));
 
   return (
     <BrowserRouter>
@@ -19,6 +33,10 @@ function App() {
               path="/Hot"
               element={
                 <Hot
+                  state={state}
+                  setState={setState}
+                  handleUpvotes={handleUpvotes}
+                  handleDownvotes={handleDownvotes}
                 />
               }
             />
@@ -26,6 +44,10 @@ function App() {
               path="/Regular"
               element={
                 <Regular
+                  state={state}
+                  setState={setState}
+                  handleUpvotes={handleUpvotes}
+                  handleDownvotes={handleDownvotes}
                 />
               }
             />
@@ -35,6 +57,3 @@ function App() {
     </BrowserRouter>
   );
 }
-
-
-export default App;
