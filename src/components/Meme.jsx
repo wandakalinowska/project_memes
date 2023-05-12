@@ -1,4 +1,6 @@
 import "../style/Meme.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faThumbsUp, faThumbsDown } from '@fortawesome/free-solid-svg-icons'
 
 const Meme = ({ id, item, handleUpvotes, handleDownvotes }) => {
   let sum = -item.downvotes + item.upvotes;
@@ -12,13 +14,13 @@ const Meme = ({ id, item, handleUpvotes, handleDownvotes }) => {
       </div>
       <div className="meme-container">
         <div className="meme-vote">
-          <p>{item.upvotes}</p>
           <button
             className="btn meme-vote__btn-up"
             onClick={() => handleUpvotes(id)}
           >
-            +
-          </button>
+            <FontAwesomeIcon icon={faThumbsUp} className="meme-vote__icon-up icon" />
+          </button> 
+           <p>{item.upvotes}</p>
         </div>
         <div className="meme-vote">
           <p>-{item.downvotes}</p>
@@ -26,11 +28,12 @@ const Meme = ({ id, item, handleUpvotes, handleDownvotes }) => {
             className="btn meme-vote__btn-down"
             onClick={() => handleDownvotes(id)}
           >
-            -
+            <FontAwesomeIcon icon={faThumbsDown} className="meme-vote__icon-down icon" />
           </button>
         </div>
+        
       </div>
-      <div className="meme-vote__sum">Suma głosów: {sum}</div>
+      <div className="meme-sum"><p>Suma głosów: {sum}</p></div>
     </div>
   );
 };

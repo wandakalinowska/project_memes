@@ -1,15 +1,1 @@
-@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&family=Montserrat:wght@400&family=Playfair+Display&display=swap');
-
-* {
-    background-color: #313842;
-    text-decoration: none;
-    list-style-type: none;
-    color: #f2f7fd;
-    font-family: 'Montserrat', sans-serif;
-}
-  
-  .App {
-    font-family: sans-serif;
-    text-align: center;
-  }
-  
+@import"https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&family=Montserrat:wght@400&family=Playfair+Display&display=swap";*{background-color:#313842;text-decoration:none;list-style-type:none;font-family:"Montserrat",sans-serif}.App{font-family:sans-serif;text-align:center}
