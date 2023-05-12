@@ -1,0 +1,53 @@
+.meme {
+    max-width: 50rem;
+    margin: 0 auto;
+    background-color: #3D4856;
+    box-shadow: 1px 1px 30px #000000;
+    margin-left: 40vw;
+  }
+  
+  .meme-title {
+    padding-top: 20px;
+    background-color: #3D4856;
+    color: #94ADCF;
+  }
+  
+  .meme-img img {
+    max-width: 30rem;
+    width: 100%;
+    padding: 2px;
+   
+  }
+  
+  .meme-container {
+    background-color: #3D4856;
+  }
+  .meme-vote {
+    background-color: #3D4856;
+  }
+  .meme-vote p {
+    background-color: #3D4856;
+  }
+
+  .btn {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+  .meme-vote__btn-up {
+    background-color: #00995E;
+  }
+
+  
+  
+  .meme-vote__btn-down {
+    background-color: #ed1c24;
+  }
+  
+  .meme-vote__sum {
+    border-top: solid 1px #94ADCF;
+    background-color: #3D4856;
+    padding: 10px 0;
+    margin: 10px 0;
+  }
+  

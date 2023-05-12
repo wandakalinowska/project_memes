@@ -1,3 +1,4 @@
+import "../style/Meme.css";
 
 const Meme = ({ id, item, handleUpvotes, handleDownvotes }) => {
   let sum = -item.downvotes + item.upvotes;

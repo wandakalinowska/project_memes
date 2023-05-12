@@ -43,7 +43,7 @@ const INITIAL_ARRAY = [
     },
     {
       id: "e7",
-      titlet: "Mem 7",
+      title: "Mem 7",
       upvotes: 15,
       downvotes: 6,
       img: "https://i1.kwejk.pl/k/obrazki/2023/04/P0FheDXm6v9O3A8Z.jpg"

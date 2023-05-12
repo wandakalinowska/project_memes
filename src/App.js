@@ -4,6 +4,7 @@ import INITIAL_ARRAY from "./components/INITIAL_ARRAY";
 import Nav from "./components/Nav";
 import Regular from "./components/Regular";
 import Hot from "./components/Hot";
+import "./style/style.css";
 
 export default function App() {
   const [state, setState] = useState(INITIAL_ARRAY);
