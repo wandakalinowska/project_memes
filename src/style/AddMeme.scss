@@ -1,0 +1,30 @@
+$navy: #3d4856;
+$blue: #387388;
+$dark: #313842;
+$light: #dce4f1;
+$black: #0c0e11;
+
+.form-container {
+  max-width: 50rem;
+  margin: 0 auto;
+  background-color: dark;
+  box-shadow: 1px 1px 30px black;
+  margin-left: 40vw;
+  margin-top: 10vh;
+  .form-container__btn {
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3rem;
+    width: 100%;
+    cursor: pointer;
+    border: solid 1px $blue;
+     border-radius: 10px;
+     &:hover {
+    background-color: $blue;
+    transition-duration: 0.5s;
+  }
+  }
+}

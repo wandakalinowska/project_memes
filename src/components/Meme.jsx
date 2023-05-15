@@ -8,7 +8,7 @@ const Meme = ({ id, item, handleUpvotes, handleDownvotes }) => {
 
   return (
     <div key={id} className="meme">
-      <h2 className="meme-title">{item.title}:</h2>
+      <h2 className="meme-title">{item.title}</h2>
       <div className="meme-img">
         <img src={item.img} alt={alt} />
       </div>
@@ -23,10 +23,10 @@ const Meme = ({ id, item, handleUpvotes, handleDownvotes }) => {
               className="meme-vote__icon-up icon"
             />
           </button>
-          <p>{item.upvotes}</p>
+          <p className="meme-vote__up">{item.upvotes}</p>
         </div>
         <div className="meme-vote">
-          <p>-{item.downvotes}</p>
+          <p className="meme-vote__down">-{item.downvotes}</p>
           <button
             className="btn meme-vote__btn-down"
             onClick={() => handleDownvotes(id)}

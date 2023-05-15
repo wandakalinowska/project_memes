@@ -41,6 +41,12 @@ $black: #0c0e11;
         margin: 0 auto;
         padding-top: 0.5rem;
       }
+      .meme-vote__down {
+        color: $red;
+      }
+      .meme-vote__up {
+        color: $green;
+      }
       .btn {
         width: 70px;
         height: 64px;

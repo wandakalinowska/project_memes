@@ -34,6 +34,12 @@ const Nav = () => {
             Regular
           </Link>
         </li>
+        <li className={splitLocation[1] === "Add_meme" ? "active" : ""}>
+          <Link className="nav-link" to="/Add_meme">
+            {" "}
+            Add your meme
+          </Link>
+        </li>
       </ul>
     </div>
   );

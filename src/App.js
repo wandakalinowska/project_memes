@@ -5,6 +5,7 @@ import Nav from "./components/Nav";
 import Regular from "./components/Regular";
 import Hot from "./components/Hot";
 import "./style/style.css";
+import AddMemeSide from "./components/AddMemeSide";
 
 export default function App() {
   const [state, setState] = useState(INITIAL_ARRAY);
@@ -45,6 +46,17 @@ export default function App() {
               path="/Regular"
               element={
                 <Regular
+                  state={state}
+                  setState={setState}
+                  handleUpvotes={handleUpvotes}
+                  handleDownvotes={handleDownvotes}
+                />
+              }
+            />
+            <Route
+              path="/Add_meme"
+              element={
+                <AddMemeSide
                   state={state}
                   setState={setState}
                   handleUpvotes={handleUpvotes}
