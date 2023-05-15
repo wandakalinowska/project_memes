@@ -1,7 +1,6 @@
 import Meme from "./Meme";
 
 const Regular = ({ state, setState, handleUpvotes, handleDownvotes }) => {
-
   return (
     <div>
       {state.map(

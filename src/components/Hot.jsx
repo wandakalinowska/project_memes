@@ -4,7 +4,7 @@ const Hot = ({ state, setState, handleUpvotes, handleDownvotes }) => {
   return (
     <div>
       {state.map(
-       (item, id) =>
+        (item, id) =>
           -item.downvotes + item.upvotes > 5 && (
             <>
               <Meme

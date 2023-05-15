@@ -16,6 +16,7 @@ $black: #0c0e11;
     padding-top: 20px;
     background-color: $dark;
     color: $light;
+    font-size: 2.2rem;
   }
   .meme-img img {
     max-width: 30rem;
@@ -27,59 +28,58 @@ $black: #0c0e11;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: $navy;
+    background-color: $dark;
     .meme-vote {
       display: flex;
-      background-color: $navy;
+      background-color: $dark;
       width: 10rem;
+      padding: 10px 0;
       p {
-        background-color: $navy;
+        background-color: $dark;
         font-size: 2rem;
         font-weight: 800;
         margin: 0 auto;
         padding-top: 0.5rem;
-        
       }
       .btn {
         width: 70px;
         height: 64px;
         font-size: 1.2rem;
-        background-color: $navy;
-        border: none;
+        background-color: $dark;
+        border: solid 1px $black;
+        border-radius: 5px;
         cursor: pointer;
-        &:hover {
-          transition-duration: 0.5s;
-          background-color: red;
-          color: green;
-        }
         .icon {
           width: 50px;
           height: 50px;
           background-color: transparent;
         }
-        // .meme-vote__icon-down {
-        //   color: $black;
-        //   &:hover {
-        //     color: $red;
-        //   }
-        // }
-        // .meme-vote__icon-up {
-        //   color: $black;
-        //   &:hover {
-        //     color: $green;
-        //   }
+        .meme-vote__icon-down {
+          color: $black;
+          &:hover {
+            color: $red;
+            transition-duration: 0.5s;
+          }
+        }
+        .meme-vote__icon-up {
+          color: $black;
+          &:hover {
+            color: $green;
+            transition-duration: 0.5s;
+          }
+        }
       }
     }
   }
-}
-.meme-sum {
-  border-top: solid 1px $blue;
-  background-color: $navy;
-  padding: 10px 0;
-  margin: 10px 0;
-  p {
-    font-size: 1.2em;
-    font-weight: 800;
-    background-color: $navy;
+  .meme-sum {
+    border-top: solid 1px $blue;
+    background-color: $dark;
+    padding: 10px 0;
+    margin: 10px 0;
+    p {
+      font-size: 1.5em;
+      font-weight: 800;
+      background-color: $dark;
+    }
   }
 }
