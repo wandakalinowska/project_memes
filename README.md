@@ -10,6 +10,7 @@ W zakładce "Dodaj mema" można stworzyć swojego mema poprzez podanie adresu UR
 * HTML 5
 * CSS 3
 * Sass
+* JavaScript
 * React.js
 
 # Getting Started with Create React App
