@@ -26,7 +26,7 @@ const Meme = ({ id, item, handleUpvotes, handleDownvotes }) => {
           <p className="meme-vote__up">{item.upvotes}</p>
         </div>
         <div className="meme-vote">
-          <p className="meme-vote__down">-{item.downvotes}</p>
+          <p className="meme-vote__down">{item.downvotes}</p>
           <button
             className="btn meme-vote__btn-down"
             onClick={() => handleDownvotes(id)}

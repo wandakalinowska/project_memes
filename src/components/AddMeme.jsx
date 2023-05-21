@@ -26,7 +26,7 @@ const AddMeme = (props) => {
     <div className="form-container">
       {!isEditing && (
         <button className="form-container__btn" onClick={startEditingHandler}>
-          Dodaj nowy mem
+          Kliknij aby dodać mema
         </button>
       )}
       {isEditing && (

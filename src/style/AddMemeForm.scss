@@ -5,52 +5,74 @@ $light: #dce4f1;
 $black: #0c0e11;
 
 .add-header {
-    padding: 20px 0;
-    border: solid 3px blue;
-    font-size: 3rem;
+  padding: 20px 0;
+  font-size: 3rem;
+  border-bottom: 1px solid $blue;
+  color: $light;
 }
 
 .add-container {
   max-width: 50rem;
   margin: 0 auto;
-  background-color: blue;
-  box-shadow: 1px 1px 30px black;
-  border: solid 5px green;
   .add-container__title {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: first baseline;
     padding: 10px;
+    margin-left: 20px;
+    color: $light;
+    label {
+      font-size: 2em;
+    }
     input {
+      border: solid 1px $blue;
       margin: 0 20px;
-      border: solid 2px blue;
+      width: 16vw;
+      color: $light;
+      font-size: 1.5em;
+      padding: 5px;
     }
   }
   .add-container__img {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: first baseline;
     padding: 10px;
-    input {
-      margin: 0 20px;
+    margin: 0 0 20px 20px;
+    color: $light;
+    label {
+      font-size: 2em;
     }
-  }
-
-  .add-container__button {
-    display: flex;
-    .add-container__button-btn {
-      border: none;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      font-size: 16px;
-      width: 100%;
-      cursor: pointer;
-      border: solid 1px #694764;
-      :hover {
-        background-color: #694764;
-      }
+    input {
+      border: solid 1px $blue;
+      margin: 0 20px;
+      width: 16vw;
+      color: $light;
+      font-size: 1.5em;
+      padding: 5px;
     }
   }
 }
 
+.add-container__button {
+  display: flex;
+  .add-container__button--btn {
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2em;
+    width: 100%;
+    cursor: pointer;
+    border: solid 1px $navy;
+    background-color: $dark;
+    color: $light;
+    border-radius: 10px;
+  }
+
+  :hover {
+    background-color: $blue;
+    color: $light;
+    transition: 1s;
+  }
+}

@@ -4,6 +4,7 @@ import INITIAL_ARRAY from "./components/INITIAL_ARRAY";
 import Nav from "./components/Nav";
 import Regular from "./components/Regular";
 import Hot from "./components/Hot";
+import Home from "./components/Home";
 import "./style/style.css";
 import AddMemeSide from "./components/AddMemeSide";
 
@@ -30,7 +31,16 @@ export default function App() {
           <Nav />
         </div>
         <div>
+        </div>
+        <div>
           <Routes>
+          <Route
+              path="/"
+              element={
+                <Home
+                />
+              }
+            />
             <Route
               path="/Hot"
               element={

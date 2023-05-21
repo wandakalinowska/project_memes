@@ -37,7 +37,7 @@ const Nav = () => {
         <li className={splitLocation[1] === "Add_meme" ? "active" : ""}>
           <Link className="nav-link" to="/Add_meme">
             {" "}
-            Add your meme
+            Dodaj mema
           </Link>
         </li>
       </ul>

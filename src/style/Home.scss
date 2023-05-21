@@ -1,0 +1,34 @@
+$navy: #3d4856;
+$blue: #387388;
+$dark: #313842;
+$light: #dce4f1;
+$black: #0c0e11;
+
+.home-container {
+  margin: 0 auto; 
+  margin-left: 25vw;
+  .home-container__header {
+    text-align: center;
+    font-size: 4em;
+    margin-top: 11vh;
+    font-weight: 800;
+  }
+  .home-container__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    p:first-child {
+      color: $blue;
+      margin: 0;
+      font-weight: 800;
+      font-size: 16em;
+    }
+    p:last-child {
+      color: $light;
+      text-decoration: underline;
+      font-size: 9em;
+      margin: 0;
+    }
+  }
+}

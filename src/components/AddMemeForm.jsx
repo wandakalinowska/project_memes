@@ -37,31 +37,38 @@ const AddMemeForm = (props) => {
 
   return (
     <form onSubmit={submitHandler}>
-      <h2 className="add-header">Add your Meme</h2>
+      <h2 className="add-header">Dodaj mema</h2>
       <div className="add-container">
         <div className="add-container__title">
           <label>Tytuł mema:</label>
           <input
             type="text"
+            placeholder="Mem"
             value={enteredTitle}
             onChange={titleChangeHandler}
           />
         </div>
         <div className="add-container__img">
-          <label>Plik: </label>
-          <input type="file" value={enteredImg} onChange={imgChangeHandler} />
+          <label>Adres url: </label>
+          <input
+            type="url"
+            placeholder="https://"
+            value={enteredImg}
+            onChange={imgChangeHandler}
+            required
+          />
         </div>
         <div></div>
       </div>
       <div className="add-container__button">
         <button
-          className="add-container__button-btn"
+          className="add-container__button--btn"
           type="button"
           onClick={props.onCancel}
         >
           Zrezygnuj
         </button>
-        <button className="add-container__button-btn" type="submit">
+        <button className="add-container__button--btn" type="submit">
           Dodaj
         </button>
       </div>

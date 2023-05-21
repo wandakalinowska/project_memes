@@ -11,6 +11,7 @@ $black: #0c0e11;
   box-shadow: 1px 1px 30px black;
   margin-left: 40vw;
   margin-top: 10vh;
+  margin-bottom: 8vh;
   .form-container__btn {
     border: none;
     padding: 15px 32px;
@@ -19,12 +20,14 @@ $black: #0c0e11;
     display: inline-block;
     font-size: 3rem;
     width: 100%;
+    color: $light;
     cursor: pointer;
     border: solid 1px $blue;
-     border-radius: 10px;
-     &:hover {
     background-color: $blue;
-    transition-duration: 0.5s;
-  }
+    border-radius: 10px;
+    &:hover {
+      background-color: $dark;
+      transition-duration: 0.5s;
+    }
   }
 }
