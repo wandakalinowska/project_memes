@@ -1,4 +1,4 @@
-# Mem serwis
+# MEM SERWIS
 
 Prosta aplikacja, która wyświetla memy z możliwością ich oceny. 
 Memy, które mają łaczną ocenę powyżej 5 trafiają na stronę "HOT", pozostałe wyświetlają się na stronie "Regular".
