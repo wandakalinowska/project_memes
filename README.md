@@ -1,3 +1,19 @@
+# Mem serwis
+
+Prosta aplikacja, która wyświetla memy z możliwością ich oceny. 
+Memy, które mają łaczną ocenę powyżej 5 trafiają na stronę "HOT", pozostałe wyświetlają się na stronie "Regular".
+W zakładce "Dodaj mema" można stworzyć swojego mema poprzez podanie adresu URL do obrazka. 
+
+
+### Rozwiązania, technologie i narzędzia:
+
+* HTML 5
+* CSS 3
+* Sass
+* React.js
+
+......................................................
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
