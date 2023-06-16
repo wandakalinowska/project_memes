@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "../style/AddMemeForm.css";
 
 const AddMemeForm = (props) => {
@@ -26,14 +26,6 @@ const AddMemeForm = (props) => {
 
     props.onSaveMemesData(memesData);
   };
-
-  useEffect(() => {
-    setEnteredTitle("");
-  }, []);
-
-  useEffect(() => {
-    setEnteredImg("");
-  }, []);
 
   return (
     <form onSubmit={submitHandler}>

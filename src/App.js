@@ -34,7 +34,7 @@ export default function App() {
         </div>
         <div>
           <Routes>
-          <Route
+            <Route
               path="/"
               element={
                 <Home

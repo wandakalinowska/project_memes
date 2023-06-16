@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faThumbsUp, faThumbsDown } from "@fortawesome/free-solid-svg-icons";
 
 const Meme = ({ id, item, handleUpvotes, handleDownvotes }) => {
-  let sum = -item.downvotes + item.upvotes;
+  const sum = item.upvotes - item.downvotes;
   const alt = "Tu miał być obrazek";
 
   return (
