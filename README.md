@@ -1,5 +1,7 @@
 # MEM SERWIS
 
+https://wandakalinowska.github.io/project_memes/
+
 Prosta aplikacja, która wyświetla memy z możliwością ich oceny.\
 Memy, które mają łaczną ocenę powyżej 5 trafiają na stronę "HOT", pozostałe wyświetlają się na stronie "Regular".\
 W zakładce "Dodaj mema" można stworzyć swojego mema poprzez podanie adresu URL do obrazka.
